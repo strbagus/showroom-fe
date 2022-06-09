@@ -18,3 +18,4 @@ Jump to BackEnd: [Showroom-Backend](https://github.com/strbagus/showroom-be)
 - [Vue-router](https://router.vuejs.org/) : Router
 - [Tailwindcss](https://tailwindcss.com/) : CSS Framework
 - [Axios](https://axios-http.com/) : HTTP client
+- [tw-elements](https://tailwind-elements.com/) : Tailwindcss Components
