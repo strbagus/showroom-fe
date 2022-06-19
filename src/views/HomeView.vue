@@ -1,9 +1,12 @@
 <script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
+import NavTop from "@/components/NavTop.vue";
+import CarList from "@/components/CarList.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <NavTop />
+    <h1 class="text-center text-white text-5xl">API GET Car</h1>
+    <CarList />
   </main>
 </template>
