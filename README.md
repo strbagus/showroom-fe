@@ -8,6 +8,7 @@ Jump to BackEnd: [Showroom-Backend](https://github.com/strbagus/showroom-be)
 
 - Clone the repository with `git clone`
 - Run `npm install`
+- Copy `.env.example` file to `.env` and edit api url credentials there
 - Run `npm run dev`
 - That's it: launch the main URL. 
 
