@@ -129,7 +129,7 @@ export default {
     
     
     mounted() {
-        axios.get('http://showroom-be.test/api/merks')
+        axios.get(import.meta.env.VITE_APP_ROOT_API+'merks')
         .then(response => (this.optionsMerks = response.data));
     },
     data: () => ({
@@ -140,14 +140,14 @@ export default {
     methods:{
         // TODO error when run
         insertMerk: function(){
-            return axios.post("http://showroom-be.test/api/merk/", {
+            return axios.post(import.meta.env.VITE_APP_ROOT_API+"merk", {
                 name: merkNama,
                 logoname: merkPhoto,
             }).then(response => (console.log(response)));
         },
         // TODO must reload page to show recently data
         deleteMerk: function(id){
-            let url = "http://showroom-be.test/api/merk/"+id;
+            let url = import.meta.env.VITE_APP_ROOT_API+'merk/'+id;
             return axios.delete(url)
             .then(response => (console.log(response)));
         }

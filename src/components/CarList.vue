@@ -33,7 +33,7 @@
 import axios from 'axios';
 export default {
     mounted() {
-        axios.get('http://showroom-be.test/api/cars')
+        axios.get(import.meta.env.VITE_APP_ROOT_API+'cars')
         .then(response => (this.optionsCars = response.data));
     },
      data: () => ({
