@@ -141,8 +141,8 @@ export default {
         // TODO error when run
         insertMerk: function(){
             return axios.post(import.meta.env.VITE_APP_ROOT_API+"merk", {
-                name: merkNama,
-                logoname: merkPhoto,
+                name: this.merkNama,
+                logoname: this.merkPhoto,
             }).then(response => (console.log(response)));
         },
         // TODO must reload page to show recently data
