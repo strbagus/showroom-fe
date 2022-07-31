@@ -18,11 +18,11 @@ const router = createRouter({
       name: "dashboard",
       component: () => import("../views/AdminDashboardView.vue"),
     },
-    // {
-    //   path: "/mobil/:carId",
-    //   name: "detailcar",
-    //   component: () => import("../views/CarView.vue"),
-    // },
+    {
+      path: "/:carName-:carId",
+      name: "detailcar",
+      component: () => import("../views/CarsView.vue"),
+    },
   ],
 });
 
